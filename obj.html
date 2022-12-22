@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="myvalue" type="text" value="test" onchange=filterData()/>
+
+
+    <script>
+
+        var myvalue = document.getElementById("myvalue").value;
+
+
+        const myArray = [
+
+            {
+
+                srno: 1,
+                bookName: "Advance Spring",
+                Author_name: "Michelle"
+            },
+            {
+                srno: 1,
+                bookName: "Spring & Hibernate",
+                Author_name: "Ajay Verma"
+            },
+
+            {
+                srno: 1,
+                bookName: "Spring Basic",
+                Author_name: "john keny"
+            }
+
+        ]
+
+            console.log(myArray)
+
+
+        function filterData() {
+            myArray.filter((result) => {
+                result == myvalue
+            })
+        }
+
+        console.log(myvalue)
+
+
+    </script>
+</body>
+
+</html>

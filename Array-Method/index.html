@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // const arr=[1,2,3,4,5,6,7]
+        // let abc;
+        // let filterMethod=arr.map((ele)=>{
+        //    return ele===2||ele===4;
+
+
+        // })
+        // console.log(...filterMethod)
+
+        
+        let words = "I am not gonna live forever, but I wanna live while I am alive";
+            console.log(words.split(" ").length)
+        function countRepeatedWords(sentence) {
+            let words = sentence.split(" ");
+            let wordMap = {};
+
+            for (let i = 0; i < words.length; i++) {
+                // debugger;
+                let currentWordCount = wordMap[words[i]];
+                // console.log(currentWordCount)
+                let count = currentWordCount ? currentWordCount : 0;
+                wordMap[words[i]] = count + 1;
+            }
+            return wordMap;
+        }
+
+        console.log(countRepeatedWords(words));
+    </script>
+</body>
+
+</html>

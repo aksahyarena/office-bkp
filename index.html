@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const a={
+            country:{
+                state:{
+                    city:"Pune"
+                }
+            }
+        }
+
+
+        // const b=a;
+        const b=JSON.parse(JSON.stringify(a));
+
+        console.log(b.country.state.city="Nagpur")
+        console.log(a.country.state.city)
+</script>
+</body>
+</html>
